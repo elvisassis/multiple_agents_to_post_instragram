@@ -5,14 +5,17 @@ from google.adk.sessions import InMemorySessionService
 from google.adk.tools import google_search
 from google.genai import types  # Para criar conteúdos (Content e Part)
 from datetime import date
+from dotenv import load_dotenv
 import textwrap # Para formatar melhor a saída de texto
 from IPython.display import display, Markdown # Para exibir texto formatado no Colab
 import requests # Para fazer requisições HTTP
 import warnings
 
+
+load_dotenv()
 warnings.filterwarnings("ignore")
 
-os.environ["GOOGLE_API_KEY"] = "AIzaSyCTrRcIxkGdi9-SohFNXuDMNte8HUvuU5o"
+GOOGLE_API_KEY = os.environ["GOOGLE_API_KEY"]
 
 # Função auxiliar que envia uma mensagem para um agente via Runner e retorna a resposta final
 def call_agent(agent: Agent, message_text: str) -> str:

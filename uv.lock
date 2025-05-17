@@ -805,6 +805,7 @@ dependencies = [
     { name = "google-adk" },
     { name = "google-genai" },
     { name = "ipython" },
+    { name = "python-dotenv" },
 ]
 
 [package.metadata]
@@ -812,6 +813,7 @@ requires-dist = [
     { name = "google-adk", specifier = ">=0.5.0" },
     { name = "google-genai", specifier = ">=1.15.0" },
     { name = "ipython", specifier = ">=9.2.0" },
+    { name = "python-dotenv", specifier = ">=1.1.0" },
 ]
 
 [[package]]
