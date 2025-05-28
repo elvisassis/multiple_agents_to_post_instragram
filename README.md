@@ -89,6 +89,29 @@ Um post otimizado e informativo como este:
 
 ---
 
+## ▶️ Como Rodar o Projeto
+
+### 1. Instale o `uv`, um gerenciador de ambiente Python super-rápido:
+Siga o guia de instalação oficial:  
+https://docs.astral.sh/uv/guides/install-python/
+
+### 2. Gere sua chave de API do Google:
+- Faça login no [Google AI Studio](https://aistudio.google.com/)
+- Gere uma API Key válida
+
+### 3. Crie um arquivo `.env` na raiz do projeto:
+```
+GOOGLE_API_KEY=<sua_api_key_aqui>
+```
+
+### 4. Rode o projeto com o seguinte comando:
+```
+uv run python agents.py
+```
+Pronto! O sistema irá executar a cadeia de agentes para gerar seu post baseado no tópico que você informar 🎯
+
+---
+
 ## 🤝 Contribuindo
 
 Contribuições são bem-vindas! Sinta-se livre para abrir issues ou pull requests.
