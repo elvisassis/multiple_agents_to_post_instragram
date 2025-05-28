@@ -15,7 +15,7 @@ import warnings
 load_dotenv()
 warnings.filterwarnings("ignore")
 
-GOOGLE_API_KEY = os.environ["GOOGLE_API_KEY"]
+# GOOGLE_API_KEY = os.environ["GOOGLE_API_KEY"]
 
 # Função auxiliar que envia uma mensagem para um agente via Runner e retorna a resposta final
 def call_agent(agent: Agent, message_text: str) -> str:
